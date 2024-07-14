@@ -1,7 +1,7 @@
 ﻿using System.Net.NetworkInformation;
 using WebsiteOrUrlOnlineStatus.Model;
 using WebsiteOrUrlOnlineStatus.Service;
-using WebsiteOrUrlOnlineStatus.Urls;
+using WebsiteOrUrlOnlineStatus.Data;
 
 namespace WebsiteOrUrlOnlineStatus
 {
@@ -11,7 +11,7 @@ namespace WebsiteOrUrlOnlineStatus
         {
             var model = new List<UrlStatusModel>();
 
-            var urls = CheckingUrls.Urls();
+            var urls = DataUrls.Urls();
             foreach (var url in urls)
             {
                 //var response = await EndPointIsService.IsSuccessPingStatus(url);

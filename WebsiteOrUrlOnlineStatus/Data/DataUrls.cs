@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebsiteOrUrlOnlineStatus.Urls
+namespace WebsiteOrUrlOnlineStatus.Data
 {
-    public abstract class CheckingUrls
+    public abstract class DataUrls
     {
         public static List<string> Urls()
         {
